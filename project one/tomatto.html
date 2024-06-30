@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+#container
+        {           
+           width:100%;
+                    
+           margin:0px auto;
+          background-color:hsl(288, 26%, 96%)
+          }
+          #content1
+        {
+           width:45%;
+           height:680px;
+           float:left;
+           margin-right:1%;         
+           background-color:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%)
+           
+                  }
+
+                  #content2
+        {
+           width:50%;
+           height:680px;
+           float:left;
+           margin-right:1%;         
+           background-color:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%)
+                  }
+
+.items{
+    display: grid;
+   
+    padding: 10px 10px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+#center{
+       padding-right:70px;
+   }
+  
+
+
+.item img{
+    border: 2px solid rgb(4, 174, 32);
+    border-radius: 4px;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 30.1s ;   
+}
+.item img:hover{
+    transform: scale(1.04);    
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: #08bd08;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size:20px;
+    display:block;
+    margin:0 auto;
+    transition:0.2s all;
+}
+
+    
+.item button:hover{
+    transform: scale(1.08);
+}
+
+</style>
+    <link rel="stylesheet" href="ex.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                  <h1 class="logo">Blue <h1 class="ap">Moon</h1></h1>
+                 </div>
+
+                <div class="menu">
+                  <ul class="a">
+                     <li><a href="login.html">Home</a></li>
+                     <li><a href="order.html">Order</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                     <li><a href="about.html">About us</a></li>
+                 </ul>
+            </div>
+        </div><hr>
+        
+        <div id="content1">
+
+<section class="items">
+            <div class="item"> 
+                <img src="tomatto rice.jpg">
+                <h4 style="color: aliceblue;">Tomatto<br>Price:$ 125 </h4>            
+ <label for="quantity"><h3 style="color: aliceblue;">Quantity:</h3></label>   
+  <input type="number" id="quantity" min="0" max="100" oninput="updatePrice()" list="priceList">
+  <datalist id="priceList">
+    <option value="10">10</option>
+    <option value="15">15</option>
+    <option value="20">20</option>
+    <!-- Add more options for different price levels -->
+  </datalist>
+<p style="color: aliceblue;">Total Price: $<span id="totalPrice">0</span><button>Take it</button>
+  </p>  
+  
+
+</div><br></div>
+<div id="content2"><h1 style="color: rgb(248, 68, 68);">Tomato Rice</h1>
+    <li style="color: rgb(79, 205, 244);font-size: 25px;">Tomato rice helps to take care of the eyes health by improving the retinal cells.</li>
+    <li style="color: rgb(79, 205, 244);font-size: 25px;">This is because the dish is loaded with vitamin A.</li>
+    <li style="color: rgb(79, 205, 244);font-size: 25px;">Tomato rice in cooker preparation process helps to overcome blood clots,</li>
+    <li style="color: rgb(79, 205, 244);font-size: 25px;">thereby making it useful for people with clotting problems.</li><br>
+    <h1 style="color: rgb(248, 68, 68);">Offers</h1>
+    <li style="color: rgb(79, 205, 244);font-size: 25px;">Get 60% OFF upto Rs 120 on Blue Moon Online Food Ordering via HDFC Bank Cards</li>
+    <li style="color: rgb(79, 205, 244);font-size: 25px;">Blue Moon gives you a flat 50% discount on your first order by using zomato coupons for new users.</li>
+    <li style="color: rgb(79, 205, 244);font-size: 25px;">Blue Moon is offering a flat 50% off on online food orders worth ₹ 159 and above. To get the discount, apply the Blue Moon promo code WELCOME50.</li>
+    <li style="color: rgb(79, 205, 244);font-size: 25px;">Blue Moon's has not specified any particular time period for the food delivery as of now.</li><br>
+    </div>
+</div>
+        </div>
+     </section>
+     
+     <footer  id="contact" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Hotel</h4>
+                    <ul>
+                        <li><a href="main.html ">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">privasy policy</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Online order</a></li>
+                        <li><a href="#">free door delivary</a></li>
+                        <li><a href="#">catering</a></li>
+                        <li><a href="#">reception Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow and Contact us</h4>
+                    <ul>
+                        <li><a href="#">facebook</a></li>
+                        <li><a href="#">instagram</a></li>
+                        <li><a href="#">Mail</a></li>
+                        <li><a href="#">9787529108</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   </footer></a>
+    </div>
+
+</body>
+
+</html>                                                                                             
